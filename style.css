@@ -1,0 +1,46 @@
+:root{
+    --background:#1c2b3c;
+    --number:#cfd2d4;
+    --bouttoncolor:#254e83;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+}
+body{
+    background-color: var(--background);
+    color: var(--number);
+}
+section{
+    display: flex;
+    margin: 3em;
+}
+span{
+    width: 33%;
+}
+form{
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+}
+bouton{
+    text-align: center;
+    line-height: 5rem;
+    background-color: var(--bouttoncolor);
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+}
+div{
+    display: grid;
+    gap:3rem;
+    grid-template-columns: repeat(4,4rem);
+}
+div>bouton:nth-child(17){
+    grid-column:span 2;
+    width: 12rem;
+}
