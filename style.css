@@ -2,6 +2,7 @@
     --background:#1c2b3c;
     --number:#cfd2d4;
     --bouttoncolor:#254e83;
+    --boutonhover:#3578c8
 }
 *{
     margin: 0;
@@ -27,20 +28,49 @@ form{
     display: flex;
     flex-direction: column;
 }
-bouton{
+textarea{
+    resize: vertical;
+    text-align: right;
+    height: 3rem;
+    width: 416px;
+    min-height: 3rem;
+    max-height: 10rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 2px solid var(--bouttoncolor);
+    padding: 0 1rem;
+    color: white;
+    font-size: 1.6rem;
+}
+button{
     text-align: center;
     line-height: 5rem;
     background-color: var(--bouttoncolor);
     font-size: 2rem;
     width: 5rem;
     height: 5rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--boutonhover);
+    color: red;
 }
 div{
     display: grid;
     gap:3rem;
     grid-template-columns: repeat(4,4rem);
 }
-div>bouton:nth-child(17){
+div>button:first-child{
+    background-color: rgb(188, 35, 35);
+}
+div>button:first-child:hover{
+    background-color: red;
+    color: white;
+    font-size: 2.2rem;
+
+}
+
+div>button:nth-child(17){
     grid-column:span 2;
     width: 12rem;
 }

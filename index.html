@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculatrice</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <main>
         <section>
             <span></span>
-            <form action="">
-                <input type="text" value="0" id="response">
-                <div>
-                    <bouton>AC</bouton>
-                    <bouton>[+/-]</bouton>
-                    <bouton>%</bouton>
-                    <bouton>&#247;</bouton>
-                    <bouton>7</bouton>
-                    <bouton>8</bouton>
-                    <bouton>9</bouton>
-                    <bouton>x</bouton>
-                    <bouton>4</bouton>
-                    <bouton>5</bouton>
-                    <bouton>6</bouton>
-                    <bouton>-</bouton>
-                    <bouton>1</bouton>
-                    <bouton>2</bouton>
-                    <bouton>3</bouton>
-                    <bouton>+</bouton>
-                    <bouton>0</bouton>
-                    <bouton>.</bouton>
-                    <bouton>=</bouton>
+            <form>
+                <textarea id="display" readonly></textarea>
+                <div id="keys">
+                    <button type="button" onclick="clearDisplay()">C</button>
+                    <button type="button" onclick="appendToDisplay('+-')">[+/-]</button>
+                    <button type="button" onclick="appendToDisplay('%')">%</button>
+                    <button type="button" onclick="appendToDisplay('/')">&#247;</button>
+                    <button type="button" onclick="appendToDisplay('7')">7</button>
+                    <button type="button" onclick="appendToDisplay('8')">8</button>
+                    <button type="button" onclick="appendToDisplay('9')">9</button>
+                    <button type="button" onclick="appendToDisplay('*')">x</button>
+                    <button type="button" onclick="appendToDisplay('4')">4</button>
+                    <button type="button" onclick="appendToDisplay('5')">5</button>
+                    <button type="button" onclick="appendToDisplay('6')">6</button>
+                    <button type="button" onclick="appendToDisplay('-')">-</button>
+                    <button type="button" onclick="appendToDisplay('1')">1</button>
+                    <button type="button" onclick="appendToDisplay('2')">2</button>
+                    <button type="button" onclick="appendToDisplay('3')">3</button>
+                    <button type="button" onclick="appendToDisplay('+')">+</button>
+                    <button type="button" onclick="appendToDisplay('0')">0</button>
+                    <button type="button" onclick="appendToDisplay('.')">.</button>
+                    <button type="button" onclick="calculate()">=</button>
                 </div>
             </form>
-            <span></span>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
