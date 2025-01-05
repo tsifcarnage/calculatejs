@@ -13,6 +13,8 @@ close.addEventListener("click", () => {
 rizz.addEventListener("click", () => {
   if (img.src.includes("eyesopen.svg")) {
     img.src = "img/eyesrizz.svg";
+  } else {
+    alert("Ouvrir d'abord les yeux");
   }
 });
 function appendToDisplay(input) {
