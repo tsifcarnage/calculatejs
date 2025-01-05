@@ -25,11 +25,40 @@ h1 {
 section {
   display: flex;
   margin: 3em;
+  gap: 3rem;
 }
-span {
+.tsif {
+  display: flex;
+  flex-direction: column;
   width: 38%;
+  position: relative;
 }
-form {
+.tsif > img {
+  align-self:center;
+}
+.tsifbut {
+  margin: 0 40px;
+  height: 50%;
+  position: relative;
+}
+.tsifbut > button {
+  width: 11rem;
+  height: 3rem;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  &:first-of-type {
+    position: absolute;
+    top: -2px;
+    left: 33px;
+  }
+  &:nth-of-type(2){
+    position: absolute;
+    top: -78px;
+    left: 151px;
+  }
+}
+
+.calcu {
   width: 15em;
   display: flex;
   flex-direction: column;
@@ -48,34 +77,34 @@ textarea {
   color: white;
   font-size: 1.6rem;
 }
-button {
-  text-align: center;
-  line-height: 5rem;
-  background-color: var(--bouttoncolor);
-  font-size: 2rem;
-  width: 5rem;
-  height: 5rem;
-  cursor: pointer;
-}
-button:hover {
-  background-color: var(--boutonhover);
-  color: red;
-}
-div {
+
+.grid {
   display: grid;
   gap: 3rem;
   grid-template-columns: repeat(4, 4rem);
+  button {
+    text-align: center;
+    line-height: 5rem;
+    background-color: var(--bouttoncolor);
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: var(--boutonhover);
+    color: red;
+  }
 }
-div > button:first-child {
+.grid > button:first-child {
   background-color: rgb(188, 35, 35);
 }
-div > button:first-child:hover {
+.grid > button:first-child:hover {
   background-color: red;
   color: white;
   font-size: 2.2rem;
 }
-
-div > button:nth-child(17) {
+.grid > button:nth-child(17) {
   grid-column: span 2;
   width: 12rem;
 }

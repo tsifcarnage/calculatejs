@@ -13,10 +13,17 @@
     </header>
     <main>
         <section>
-            <span></span>
-            <form>
+            <div class="tsif">
+                <img src="img/eyesopen.svg" alt="" id="myhead" width="200px">
+                <div class="tsifbut">
+                    <button id="open">Ouvrir les yeux</button>
+                    <button id="close">Fermer les yeux</button>
+                    <button id="rizz">Rizzer</button>
+                </div>
+            </div>
+            <div class="calcu">
                 <textarea id="display" readonly></textarea>
-                <div id="keys">
+                <div class= "grid"id="keys">
                     <button type="button" onclick="clearDisplay()">C</button>
                     <button type="button" onclick="appendToDisplay('+-')">[+/-]</button>
                     <button type="button" onclick="appendToDisplay('%')">%</button>
@@ -37,7 +44,7 @@
                     <button type="button" onclick="appendToDisplay('.')">.</button>
                     <button type="button" onclick="calculate()">=</button>
                 </div>
-            </form>
+            </div>
         </section>
     </main>
     <script src="app.js"></script>
