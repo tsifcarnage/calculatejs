@@ -52,7 +52,7 @@ section {
   height: 3rem;
   border-radius: 3rem;
   font-size: 1.4rem;
-  background-color: var(--boutonhover);
+  background-color: var(--bouttoncolor);
   &:first-of-type {
     position: absolute;
     top: -2px;
@@ -68,6 +68,11 @@ section {
     top: -74px;
     left: -21px;
   }
+}
+.tsifbut>button:hover{
+  background-color: var(--boutonhover);
+  color:white;
+  cursor: pointer;
 }
 
 .calcu {
